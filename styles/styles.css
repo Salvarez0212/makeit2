@@ -79,3 +79,52 @@ img{
     bottom: 140px;
     right: 55px;
 }
+
+@media(min-width: 390px) and (max-width: 1500px) {
+    
+    .main_container {
+        margin: 30px;
+        padding-bottom: 30px;
+    }
+    .text_container{
+        flex-direction: row;
+        margin-top: 75px;
+        margin-right: 50px;
+        margin-left: 50px;
+        justify-content: space-between;
+    }
+    .text_container div {
+        padding-right: 25px;
+        width: 50%;
+        height: 20%;
+    }
+    .photos_container{
+        flex-direction: row;
+    }
+    .card_container {
+        width: 25%;
+        height: 400px;
+    }
+    
+    #fifth_element {
+        align-self: flex-end;
+        height: 280px;
+        margin-top: 150px;
+    }
+    .text_container h1 {
+        font-size: 36px;
+    }
+    .text_container p{
+        margin-top: 10px;
+        font-size: 18px;
+       width: 100%;
+    }
+    .card h3{
+        margin-top: 5px;
+        font-size: 18px;
+    }
+    .card span{
+        font-size: 14px;
+        font-weight: 300;
+    }
+}

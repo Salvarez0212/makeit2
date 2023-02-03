@@ -37,7 +37,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+    margin: 3vh;
 }
 .card_container{
     width: 35%;
@@ -52,9 +52,14 @@ img{
     height: 350px;
     position: relative;
 }
-.photos_container div:nth-child(even){
+/* .photos_container div:nth-child(even){
     align-self: flex-end;
     height: 280px;
+} */
+.photos_container div:nth-child(3n+2){
+    align-self: flex-end;
+    margin-top: 80px;
+    /* height: 280px; */
 }
 .card h3{
     margin-top: 5px;
@@ -76,8 +81,8 @@ img{
     align-self: flex-end;
     justify-self: end;
     position: absolute;
-    bottom: 140px;
-    right: 55px;
+    bottom: 33vh;
+    left: 1vh
 }
 
 @media(min-width: 390px) and (max-width: 1500px) {
@@ -100,17 +105,18 @@ img{
     }
     .photos_container{
         flex-direction: row;
+        margin: 5vh;
     }
     .card_container {
         width: 25%;
-        height: 400px;
+        height: 65vh;
     }
     
-    #fifth_element {
+    /* #fifth_element {
         align-self: flex-end;
         height: 280px;
         margin-top: 150px;
-    }
+    } */
     .text_container h1 {
         font-size: 36px;
     }
@@ -126,5 +132,9 @@ img{
     .card span{
         font-size: 14px;
         font-weight: 300;
+    }
+    .card .span{
+        bottom: 26vh;
+        left: 26vh
     }
 }
